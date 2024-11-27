@@ -13,21 +13,40 @@ A Python script for communicating with Texas Instruments Zigbee modules (CC2652,
 - A compatible Zigbee module connected via UART.
 - Dependencies specified in `requirements.txt`.
 
-## Installation
-1. Clone the repository:
+## Installation  
+### For Wiren Board Controllers 
+1. Download the script directly to your controller: 
+    ```bash
+    wget https://github.com/aadegtyarev/check-cc2652p/src/check_cc2652p.py
+    ```
 
-  ```bash
-  git clone https://github.com/aadegtyarev/check-cc2652p/src/check_cc2652p.git
-  cd check_cc2652p
-  ```
-2. If you do not have a Waren Board controller, then set the dependences:
+2. Run the script without additional setup, as all dependencies are pre-installed on Wiren Board:     
+    ```
+    python3 ./check_cc2652p.py /dev/ttyMOD4
+    ```   
 
-  ```
-  pip install -r requirements.txt
-  ```
+### For Other Systems
 
-  There are already dependence on Wiren Board controllers.
-
+1. Ensure you have Git and Python 3 installed on your system. Install Git if needed:   
+   
+    ```
+    sudo apt update && sudo apt install -y git
+    ```
+    
+2. Clone the repository:        
+    ```
+    git clone https://github.com/aadegtyarev/check-cc2652p.git cd check-cc2652p
+    ```
+    
+3. Install the required dependencies:        
+    ```
+    pip install -r requirements.txt    
+    ```
+    
+4. Run the script:        
+    ```
+    python3 ./src/check_cc2652p.py /dev/your-port
+    ```
 
 ## Usage
 
