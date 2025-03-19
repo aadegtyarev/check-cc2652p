@@ -17,7 +17,7 @@ A Python script for communicating with Texas Instruments Zigbee modules (CC2652,
 ### For Wiren Board Controllers 
 1. Download the script directly to your controller: 
     ```bash
-    wget https://github.com/aadegtyarev/check-cc2652p/src/check_cc2652p.py
+    wget https://raw.githubusercontent.com/aadegtyarev/check-cc2652p/refs/heads/main/src/check_cc2652p.py
     ```
 
 2. Run the script without additional setup, as all dependencies are pre-installed on Wiren Board:     
